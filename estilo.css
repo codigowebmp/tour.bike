@@ -1,0 +1,160 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#fff, #f1efed);
+}
+.contenedor{
+    position: relative;
+    width: 1300px;
+    border: 6px solid #000;
+    border-radius: 30px;
+    padding: 50px 100px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+}
+.contenedor header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contenedor header .logo{
+    display: flex;
+    align-items: center;
+}
+.contenedor header .logo .icono{
+    background-color: #000;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+.contenedor header .logo .icono i{
+    color: #86e1b3;
+    line-height: 30px;
+}
+.contenedor header .logo h2{
+    font-weight: normal;
+}
+.contenedor nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 7px 15px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+.contenedor nav a:hover{
+    border: 2px solid #ff7d52;
+}
+.contenedor nav .btn{
+    border: 2px solid #ff7d52;
+    transition: .3s;
+}
+.contenedor nav .btn:hover{
+    background-color: #ff7d52;
+    color: #fff;
+}
+
+.contenedor .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor .fila .col .dia{
+    display: block;
+    font-size: 8rem;
+}
+.contenedor .fila .col .fecha i{
+    color: #ff7d52;
+    font-size: 26px;
+}
+.contenedor .fila .col .fecha .mes{
+    font-weight: bold;
+    font-size: 22px;
+}
+.contenedor .fila .item{
+    margin: 20px 0;
+}
+.contenedor .fila .item i{
+    margin-right: 20px;
+}
+.contenedor img{
+    max-width: 450px;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenedor .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background: #fff;
+    padding: 40px;
+    border-radius: 30px;
+}
+.contenedor .info h2{
+    font-size: 3.5rem;
+    font-family: 'Dancing Script';
+}
+.contenedor .info a{
+    text-decoration: none;
+    color: #adb4bb;
+}
+.contenedor .info a:hover{
+    text-decoration: underline;
+}
+.contenedor .info .col > i{
+    color: #484c50;
+}
+.contenedor .info .contenedor-lupa{
+    background: linear-gradient(#f58a66, #ff7d52);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.contenedor .info .contenedor-lupa i{
+    transition: .3s;
+}
+.contenedor .info .contenedor-lupa:hover i{
+    scale:1.5
+}
+.forma1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+}
+.forma2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+}
+.forma3{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 150px;
+    transform: translateY(-50%);
+}
